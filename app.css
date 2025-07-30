@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+#scoreBoard {
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	position: fixed;
+	color: #fff;
+	text-align: center;
+	z-index: 10;
+}
+
+img {
+	width: 100px;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	z-index: 1;
+}
+
+/* Floating animation */
+#coin {
+	animation: float 1.5s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+		transform: translateY( 0 );
+	}
+	50% {
+		transform: translateY( -20px );
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
